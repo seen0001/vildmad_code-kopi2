@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <header>
+        <nav class="login_nav">
+            <div class="logo">
+                <a href="index.html"><img src="img_vildmad/logo.webp" alt="Logo"></a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rawmaterials.html">Raw materials</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <span><a class="signin_nav" href="login.html">Login</a>
+                <a class="signup_nav" href="signup.html">Sign up</a></span>
+        </nav>
+    </header>
+    <div class="container">
+        <form action="netlify" class="login__form">
+            <h1>Sign up</h1>
+            <p>Please enter a valid username and password to sign up</p>
+            <div class="input__row">
+                <span><i class="ri-user-3-line"></i></span>
+                <div class="input__group">
+                    <input type="text" placeholder=" ">
+                    <label for="name">Name</label>
+                </div>
+            </div>
+            <div class="input__row">
+                <span><i class="ri-lock-2-line"></i></span>
+                <div class="input__group">
+                    <input id="password" type="password" placeholder=" ">
+                    <label for="name">Password</label>
+                </div>
+                <span id="password-eye"><i class="ri-eye-off-line"></i></span>
+            </div>
+            <div class="action__btns">
+                <div class="remember__me">
+                    <input type="checkbox" id="check">
+                    <label for="check">Remember me</label>
+                </div>
+                <a href="#" class="forgot__password">Need help?</a>
+            </div>
+            <button class="login__btn">Create account</button>
+            <div class="register">
+                Already have an account? <a href="login.html">Login</a>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="section__container footer__bar">
+            <div class="copyright">
+                Copyright © 2024 forest flavours. All rights reserved.
+            </div>
+            <div class="footer__form">
+                <form name="form" data-netlify="true">
+                    <label for="footerform"></label>
+                    <input type="email" name="email" id="footerform" placeholder="Enter your e-mail">
+                    <button class="btn" type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

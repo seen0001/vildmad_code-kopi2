@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item</title>
+    <link rel="stylesheet" href="singlesite.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="img_vildmad/logo.webp" alt="Logo"></a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rawmaterials.html">Raw materials</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <span><a class="signin_nav" href="login.html">Login</a>
+                <a class="signup_nav" href="signup.html">Sign up</a></span>
+        </nav>
+    </header>
+    <main>
+        <section class="products">
+            <div class="product_header">
+                <h1 class="name"></h1>
+                <img class="image" src="" alt="">
+                <form class="upload">
+                    <label class="label">Let's see yours!</label>
+                    <br>
+                    <div class="img_input">
+                        <input>
+                        <label for="file-input" class="custom-file-upload">
+                            Choose File
+                        </label>
+                        <input type="file" id="file-input" accept="image/*">
+                    </div>
+                </form>
+            </div>
+            <div class="info_header">
+                <h2 class="list_head"></h2>
+                <ol class="list">
+                    <h3>Where can you find it?</h3>
+                    <li class="where"></li>
+                    <h3>When can you find it?</h3>
+                    <li class="when"></li>
+                    <h3>How to spot it</h3>
+                    <li class="spot"></li>
+                    <h3>How to pick it</h3>
+                    <li class="pick"></li>
+                    <h3>Be aware of</h3>
+                    <li class="be_aware"></li>
+                    <h3>Fun fact</h3>
+                    <li class="fun_fact"></li>
+                </ol>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="section__container footer__bar">
+            <div class="copyright">
+                Copyright © 2024 forest flavours. All rights reserved.
+            </div>
+            <div class="footer__form">
+                <form name="form" data-netlify="true">
+                    <label for="footerform"></label>
+                    <input type="email" name="email" id="footerform" placeholder="Enter your e-mail">
+                    <button class="btn" type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="singlesite.js"></script>
+</body>
+
+</html>

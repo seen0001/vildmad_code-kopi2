@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="img_vildmad/logo.webp" alt="Logo"></a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rawmaterials.html">Raw materials</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <span><a class="signin_nav" href="login.html">Login</a>
+        <a class="signup_nav" href="signup.html">Sign up</a></span>
+    </nav>
+  </header>
+  <div class="main">
+    <video autoplay class="bg__video">
+      <source src="vildmad_mp4/vildmad_hero.mp4" type="video/mp4" />
+    </video>
+    <div class="content">
+      <div>
+        <img src="img_vildmad/logo3.webp" alt="Logo">
+      </div>
+      <button class="promo" onclick="scrollDown()">Get started!</button>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="home_text">
+    <div>
+      <h1>What is foraging?</h1>
+      <p>Foraging means searching for food in nature, like hunting, fishing, or picking wild plants and fruits. People
+        and
+        animals have been doing it for a long time. Nowadays, foraging can also include things like hunting for
+        mushrooms
+        or
+        gathering herbs for cooking or medicine.</p>
+      <br>
+      <p>Join us in fostering a community that values the delicate balance between humans and nature. Together, let's
+        embark on a
+        journey of sustainable foraging that not only nourishes our bodies but also nurtures a greater sense of
+        environmental
+        stewardship.</p>
+
+      <a href="rawmaterials.html">
+        <div class="ff_link">
+          <p>Explore the forest flavours</p>
+        </div>
+      </a>
+    </div>
+    <img class="home_img" src="img_vildmad/svamp.jpg" alt="">
+  </div>
+  <footer>
+    <div class="section__container footer__bar">
+      <div class="copyright">
+        Copyright © 2024 forest flavours. All rights reserved.
+      </div>
+      <div class="footer__form">
+        <form name="form" data-netlify="true">
+          <label for="footerform"></label>
+          <input type="email" name="email" id="footerform" placeholder="Enter your e-mail">
+          <button class="btn" type="submit">SUBSCRIBE</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
