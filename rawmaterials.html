@@ -1,102 +1,150 @@
 <!DOCTYPE html>
 <html lang="da">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Categories</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="rawmaterials.css">
-</head>
+    <link rel="icon" href="img_vildmad/linden.webp" type="image/webp+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="rawmaterials.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <div class="logo">
-                <a href="index.html"><img src="img_vildmad/logo.webp" alt="Logo"></a>
-            </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="rawmaterials.html">Raw materials</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-            <span><a class="signin_nav" href="login.html">Login</a>
-                <a class="signup_nav" href="signup.html">Sign up</a></span>
-        </nav>
+      <nav>
+        <div class="logo">
+          <a href="index.html"
+            ><img src="img_vildmad/logo.webp" alt="Logo"
+          /></a>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rawmaterials.html">Raw materials</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <span
+          ><a class="signin_nav" href="login.html">Login</a>
+          <a class="signup_nav" href="signup.html">Sign up</a></span
+        >
+      </nav>
     </header>
 
     <main>
-        <div class="raw_grid">
-            <!-- FILTER!!! -->
-            <div class="form_div">
-                <form class="sortby_form">
-                    <h2>Sort by</h2>
-                    <fieldset>
-                        <br>
-                        <h3>Seasons</h3>
-                        <input type="checkbox" id="spring_box" name="season[]" value="Spring">
-                        <label for="spring">Spring</label><br />
+      <div class="raw_grid">
+        <!-- FILTER!!! -->
+        <div class="form_div">
+          <form class="sortby_form">
+            <h2>Sort by</h2>
+            <fieldset>
+              <br />
+              <h3>Seasons</h3>
+              <input
+                type="checkbox"
+                id="spring_box"
+                name="season[]"
+                value="Spring"
+              />
+              <label for="spring">Spring</label><br />
 
-                        <input type="checkbox" id="summer_box" name="season[]" value="Summer">
-                        <label for="summer">Summer</label><br />
+              <input
+                type="checkbox"
+                id="summer_box"
+                name="season[]"
+                value="Summer"
+              />
+              <label for="summer">Summer</label><br />
 
-                        <input type="checkbox" id="fall_box" name="season[]" value="Fall">
-                        <label for="fall">Fall</label><br />
+              <input
+                type="checkbox"
+                id="fall_box"
+                name="season[]"
+                value="Fall"
+              />
+              <label for="fall">Fall</label><br />
 
-                        <input type="checkbox" id="winter_box" name="season[]" value="Winter">
-                        <label for="winter">Winter</label><br />
-                    </fieldset>
-                    <br>
-                    <fieldset>
-                        <h3>Forest type</h3>
-                        <input type="checkbox" id="deciduous_box" name="forest[]" value="Deciduous forest">
-                        <label for="deciduous">Deciduous forest</label><br />
+              <input
+                type="checkbox"
+                id="winter_box"
+                name="season[]"
+                value="Winter"
+              />
+              <label for="winter">Winter</label><br />
+            </fieldset>
+            <br />
+            <fieldset>
+              <h3>Forest type</h3>
+              <input
+                type="checkbox"
+                id="deciduous_box"
+                name="forest[]"
+                value="Deciduous forest"
+              />
+              <label for="deciduous">Deciduous forest</label><br />
 
-                        <input type="checkbox" id="coniferous_box" name="forest[]" value="Coniferous forest">
-                        <label for="coniferous">Coniferous forest</label><br />
-                    </fieldset>
-                    <br>
-                    <fieldset>
-                        <h3>Food groups</h3>
-                        <input type="checkbox" id="plant_box" name="group[]" value="Shrubs and trees">
-                        <label for="plant">Plants</label><br />
+              <input
+                type="checkbox"
+                id="coniferous_box"
+                name="forest[]"
+                value="Coniferous forest"
+              />
+              <label for="coniferous">Coniferous forest</label><br />
+            </fieldset>
+            <br />
+            <fieldset>
+              <h3>Food groups</h3>
+              <input
+                type="checkbox"
+                id="plant_box"
+                name="group[]"
+                value="Shrubs and trees"
+              />
+              <label for="plant">Plants</label><br />
 
-                        <input type="checkbox" id="mushroom_box" name="group[]" value="Mushrooms">
-                        <label for="mushroom">Mushrooms</label><br />
-                    </fieldset>
+              <input
+                type="checkbox"
+                id="mushroom_box"
+                name="group[]"
+                value="Mushrooms"
+              />
+              <label for="mushroom">Mushrooms</label><br />
+            </fieldset>
 
-                    <br>
-                </form>
-            </div>
-            <div class="form_products">
-                <div class="products"></div>
-
-                <template>
-                    <article>
-                        <a>
-                            <img src="" alt="">
-                            <h2></h2>
-                        </a>
-                    </article>
-                </template>
-            </div>
+            <br />
+          </form>
         </div>
+        <div class="form_products">
+          <div class="products"></div>
+
+          <template>
+            <article>
+              <a>
+                <img src="" alt="" />
+                <h2></h2>
+              </a>
+            </article>
+          </template>
+        </div>
+      </div>
     </main>
     <footer>
-        <div class="section__container footer__bar">
-            <div class="copyright">
-                Copyright © 2024 forest flavours. All rights reserved.
-            </div>
-            <div class="footer__form">
-                <form name="form" data-netlify="true">
-                    <label for="footerform"></label>
-                    <input type="email" name="email" id="footerform" placeholder="Enter your e-mail">
-                    <button class="btn" type="submit">SUBSCRIBE</button>
-                </form>
-            </div>
+      <div class="section__container footer__bar">
+        <div class="copyright">
+          Copyright © 2024 forest flavours. All rights reserved.
         </div>
+        <div class="footer__form">
+          <form name="form" data-netlify="true">
+            <label for="footerform"></label>
+            <input
+              type="email"
+              name="email"
+              id="footerform"
+              placeholder="Enter your e-mail"
+            />
+            <button class="btn" type="submit">SUBSCRIBE</button>
+          </form>
+        </div>
+      </div>
     </footer>
     <script src="rawmaterials.js"></script>
-</body>
-
+  </body>
 </html>
