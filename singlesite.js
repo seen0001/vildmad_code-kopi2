@@ -1,11 +1,12 @@
 const url = "https://srnudmmexjrrynebtaij.supabase.co";
 
-const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNybnVkbW1leGpycnluZWJ0YWlqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDgwMjUzMDYsImV4cCI6MjAyMzYwMTMwNn0.GrQk7oO_Z8bc9084uQ5SaBluU_EcBb_6p76ob4Pe6PA";
+const key =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNybnVkbW1leGpycnluZWJ0YWlqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDgwMjUzMDYsImV4cCI6MjAyMzYwMTMwNn0.GrQk7oO_Z8bc9084uQ5SaBluU_EcBb_6p76ob4Pe6PA";
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 let items = [];
 
-// Function to get a product by ID
+// få produkt gjennom ID
 function getProduct() {
   // Check if id is not null before proceeding
   if (id !== null) {
@@ -19,7 +20,7 @@ function getProduct() {
   }
 }
 
-// Fetch data from the API if id is not null
+// fetche data fra API så lenge ID ikke er 0
 if (id !== null) {
   fetch(`${url}/rest/v1/vildmad?id=eq.${id}`, {
     method: "GET",
@@ -29,9 +30,9 @@ if (id !== null) {
   })
     .then((res) => res.json())
     .then((data) => {
-      // Ensure that the data is an array or extract it from the object
+      // hente API, sørge for at det ikke er 0
       items = Array.isArray(data) ? data : data.data;
-      getProduct(); // Call getProduct after fetching data
+      getProduct(); // kalle på getProduct
     })
     .catch((error) => {
       console.error("Error fetching data:", error);
@@ -40,12 +41,13 @@ if (id !== null) {
   console.error("ID parameter is null");
 }
 
-// Function to display product details on the page
+// displayer produktdetaljer
 function showData(product) {
-  // Ensure product is not undefined before accessing its properties
+  // sørge for at produkt ikke er udefinert
   if (product) {
     document.querySelector(".name").textContent = product.title;
-    document.querySelector(".list_head").textContent = product.sankelandskaber_0_title;
+    document.querySelector(".list_head").textContent =
+      product.sankelandskaber_0_title;
     document.querySelector(".image").src = product.billede;
     document.querySelector(".where").textContent = product.where;
     document.querySelector(".when").textContent = product.when;
@@ -53,20 +55,7 @@ function showData(product) {
     document.querySelector(".pick").textContent = product.pick;
     document.querySelector(".be_aware").textContent = product.be_aware;
     document.querySelector(".fun_fact").textContent = product.fun_fact;
-    // Populate other elements with product details here
   } else {
     console.error("Product not found");
   }
 }
-
-/* <h1 class="name"></h1>
-            <h2 class="list_head"></h2>
-            <img class="image" src="" alt="">
-            <ol class="list">
-                <li class="where"></li>
-                <li class="when"></li>
-                <li class="spot"></li>
-                <li class="pick"></li>
-                <li class="be_aware"></li>
-                <li class="fun_fact"></li>
-*/
