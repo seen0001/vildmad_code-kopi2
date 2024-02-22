@@ -180,6 +180,57 @@ footer {
   transition: 0.3s;
   margin-left: 20px;
 }
+.burger {
+  width: 30px;
+  height: 20px;
+  display: none;
+}
+
+.burger .strek {
+  width: 100%;
+  height: 2px;
+  background-color:#1B542E;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+@media (max-width: 1400px) {
+  .header{
+    display: none;
+  }
+  .logo{
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .strek:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+  .burger.active .strek:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+  .burger.active .strek:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+  nav.active .header {
+    display: block;
+    background-color:var(--button-color);
+    position: absolute;
+    top: 100px;
+    right: 2px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  nav.active .header li{
+    margin: 1em;
+  }
+  nav.active .header li a{
+    color: var(  --text-light);
+  }
+}
 
 @media (max-width: 800px) {
   .copyright {
