@@ -20,7 +20,7 @@
 }
 
 body {
-  font-family: "Helvetica", sans-serif;
+  font-family: "roboto";
   background-color: var(--primary-color);
   line-height: 1.5;
   color: var(--primary-color-dark);
@@ -192,6 +192,10 @@ footer {
   background-color:#1B542E;
   margin-bottom: 5px;
   transition: 0.2s linear;
+}
+@font-face {
+  font-family: "roboto";
+  src: url(font/roboto-light-webfont.woff2);
 }
 @media (max-width: 1400px) {
   .header{
